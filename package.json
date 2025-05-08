@@ -1,0 +1,45 @@
+{
+  "name": "lolmeida/mcp-obsidian",
+  "version": "1.1.1",
+  "module": "src/index.ts",
+  "main": "dist/index.js",
+  "bin": "dist/index.js",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lolmeida/mcp-obsidian"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-obsidian",
+    "modelcontextprotocol",
+    "claude",
+    "obsidian",
+    "lolmeida"
+  ],
+  "scripts": {
+    "dev": "npx ts-node-dev src/index.ts",
+    "build": "npx tsc",
+    "lint": "npx eslint .",
+    "format": "npx prettier --write .",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@types/node": "latest",
+    "typescript": "^5",
+    "ts-node-dev": "^2.0.0",
+    "eslint": "^8.56.0",
+    "prettier": "^3.1.1"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.11.0"
+  }
+}
