@@ -1,5 +1,5 @@
 {
-  "name": "lolmeida/mcp-obsidian",
+  "name": "lolmeida-mcp-obsidian",
   "version": "1.1.1",
   "module": "src/index.ts",
   "main": "dist/index.js",

@@ -1,6 +1,6 @@
 # MCP server for Obsidian (TypeScript + Node.js)
 
-[![NPM Version](https://img.shields.io/npm/v/lolmeida%2Fmcp-obsidian)](https://www.npmjs.com/package/lolmeida/mcp-obsidian)
+[![NPM Version](https://img.shields.io/npm/v/lolmeida-mcp-obsidian)](https://www.npmjs.com/package/lolmeida-mcp-obsidian)
 
 > A Model-Context-Protocol (MCP) server that lets Claude (or any MCP-compatible LLM) interact with your Obsidian vault through the [**Local REST API**](https://github.com/coddingtonbear/obsidian-local-rest-api) community plugin – written in **TypeScript** and runnable with **npx**.
 
@@ -69,9 +69,9 @@ There are two ways to pass the Obsidian API key to the server:
 // claude_desktop_config.json
 {
   "mcpServers": {
-    "lolmeida/mcp-obsidian": {
+    "lolmeida-mcp-obsidian": {
       "command": "npx",
-      "args": ["lolmeida/mcp-obsidian@latest"],
+      "args": ["lolmeida-mcp-obsidian@latest"],
       "env": {
         "OBSIDIAN_API_KEY": "your-obsidian-api-key"
       }
@@ -81,7 +81,7 @@ There are two ways to pass the Obsidian API key to the server:
 ```
 
 >[!NOTE]
-> Use `lolmeida/mcp-obsidian@latest` to ensure you always run the most up to date version of the server.
+> Use `lolmeida-mcp-obsidian@latest` to ensure you always run the most up to date version of the server.
 
 2. Alternatively, you can use an **`.env` file**. Place the key in the `.env` you created above. Note it must be placed in the working directory where the MCP server is running.
 
@@ -116,7 +116,7 @@ This is useful for quickly testing changes before publishing.
 // claude_desktop_config.json
 {
   "mcpServers": {
-    "lolmeida/mcp-obsidian": {
+    "lolmeida-mcp-obsidian": {
       "command": "npx",
       "args": ["ts-node", "/path/to/repo/src/index.ts"],
       "env": {

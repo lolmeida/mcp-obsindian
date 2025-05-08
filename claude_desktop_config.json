@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "lolmeida-mcp-obsidian": {
+      "command": "node",
+      "args": ["/Users/lourencoalmeida/Peah/APP/MCP/mcp-obsidian/dist/index.js"],
+      "env": {
+        "OBSIDIAN_API_KEY": "tua-api-key-do-obsidian"
+      }
+    }
+  }
+} 
